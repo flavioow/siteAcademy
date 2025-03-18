@@ -1,20 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Righteous&display=swap');
 
 :root {
-    --font-padrao: "Poppins", sans-serif;
-    --branco: #fff;
-    --azul-escuro: #1D267D;
-    --azul-medio: #4276BD;
-    --azul-claro: #35BEF0;
-    --verde-escuro: #03A64A;
-    --verde-claro: #64FF1C;
-    --verde-claro-02: #4AD4CD;
-    --laranja-escuro: #F98439;
-    --laranja-claro: #F2B544;
-    --roxo-escuro: #4D49BF;
-    --roxo-claro: #BE53FF;
-    --cinza-claro: #A2A2A2;
-    --cinza-background-pop: #ccccccc9;
-    --cinza-claro-02: #e5e0e0;
-    --preto: #000;
+    color-scheme: light dark;
+
+    /* Cores Principais */
+    --color-primary: #5b54de;
+    --color-primary--rgb: 91, 84, 222;
+    --color-secondary: #cfccff;
+    --color-secondary--rgb: 207, 204, 255;
+    --color-accent: #eab948;
+    --color-accent--rgb: 234, 185, 72;
+
+    /* Cores de Feedback */
+    --color-success: #13ce66;
+    --color-success--rgb: 19, 206, 102;
+    --color-error: #ff4949;
+    --color-error--rgb: 255, 73, 73;
+
+    /* Escala de Cinza */
+    --color-gray-100: #f3f4f6;
+    --color-gray-100--rgb: 244, 244, 245;
+    --color-gray-200: #e5e7eb;
+    --color-gray-200--rgb: 234, 234, 231;
+    --color-gray-300: #d1d5db;
+    --color-gray-300--rgb: 212, 212, 216;
+    --color-gray-400: #9ca3af;
+    --color-gray-400--rgb: 161, 161, 170;
+    --color-gray-500: #6b7280;
+    --color-gray-500--rgb: 113, 113, 122;
+    --color-gray-600: #4b5563;
+    --color-gray-600--rgb: 82, 82, 91;
+    --color-gray-700: #374151;
+    --color-gray-700--rgb: 63, 63, 70;
+    --color-gray-800: #1f2937;
+    --color-gray-800--rgb: 34, 34, 39;
+    --color-gray-900: #111827;
+    --color-gray-900--rgb: 17, 24, 39;
+
+    /* Tipografia */
+    --font-heading: 'Righteous', sans-serif;
+    --font-sans: 'Inter', sans-serif;
+
+    /* Espaçamentos */
+    --space-0: 0px;
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-7: 28px;
+    --space-8: 32px;
+    --space-9: 36px;
+    --space-10: 40px;
+    --space-11: 44px;
+    --space-12: 48px;
+    --space-14: 56px;
+    --space-16: 64px;
+    --space-20: 80px;
+    --space-24: 96px;
+    --space-28: 112px;
+    --space-32: 128px;
+    --space-36: 144px;
+    --space-40: 160px;
+    --space-44: 176px;
+    --space-48: 192px;
+    --space-52: 208px;
+    --space-56: 224px;
+    --space-60: 240px;
+    --space-64: 256px;
+    --space-72: 288px;
+    --space-80: 320px;
+    --space-96: 384px;
+
+    /* Bordas */
+    --border-none: none;
+    --border: 1px solid;
+    --border-2: 2px solid;
+    --border-4: 4px solid;
+    --border-8: 8px solid;
+
+    /* Durações */
+    --duration-75: 75ms ease-in-out;
+    --duration-150: 150ms ease-in-out;
+    --duration-300: 300ms ease-in-out;
+    --duration-500: 500ms ease-in-out;
+    --duration-700: 700ms ease-in-out;
+
+    /* Efeitos de borrão */
+    --blur-sm: 4px;
+    --blur-md: 8px;
+    --blur-lg: 12px;
+    --blur-xl: 16px;
+    --blur-2xl: 24px;
+    --blur-3xl: 40px;
+
+    /* Sombra da caixa */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.2);
+    --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.25);
+    --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+    --shadow-none: none;
+
+    /* Breakpoints */
+    /* Celular = 640px */
+    /* Tablet = 780px */
+    /* Laptop = 1024px */
+    /* Desktop = 1280px */
+    /* TV = 1536px */
 }
