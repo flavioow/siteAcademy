@@ -12,6 +12,24 @@
 body {
     width: 100%;
     min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
+
+    &>*:not(.header, .footer) {
+        grid-area: content;
+    }
+
+    &>.header {
+        grid-area: header;
+    }
+
+    &>.footer {
+        grid-area: footer;
+    }
 }
 
 @media (prefers-color-scheme: light) {
@@ -42,6 +60,7 @@ h4,
 h5 {
     font-family: var(--font-heading);
     font-weight: 700;
+    letter-spacing: 1px;
 }
 
 html {
@@ -76,6 +95,31 @@ small {
     font-size: 0.750rem;
 }
 
+@media (prefers-color-scheme: light) {
+    .content-grid :is(h2, h3, h4, h5, h6) {
+        color: var(--color-gray-800);
+    }
+
+    .content-grid p {
+        color: var(--color-gray-700);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .content-grid :is(h2, h3, h4, h5, h6) {
+        color: var(--color-gray-200);
+    }
+
+    .content-grid p {
+        color: var(--color-gray-300);
+    }
+}
+
+.content-grid :is(h1, h2, h3, h4) {
+    width: 50%;
+    text-wrap: pretty;
+}
+
 .content-grid,
 .content-full-width {
     --padding-inline: 2rem;
@@ -102,4 +146,34 @@ small {
     grid-column: full-width;
     display: grid;
     grid-template-columns: inherit;
+}
+
+.content-grid :is(h1, h2, h3, h4, h5, h6):has(+:is(h1, h2, h3, h4, h5, h6, p)),
+.content-grid :is(h1, h2, h3, h4, h5, h6)+:is(h1, h2, h3, h4, h5, h6, p):not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.content-grid p:has(+p),
+.content-grid p+p:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.content-grid>section:not(.main-background) {
+    padding-block: 2.625rem;
+}
+
+.section-bg :is(h1, h2, h3, h4, h5, h6) {
+    text-wrap: pretty;
+}
+
+@media (prefers-color-scheme: light) {
+    .section-bg {
+        background-color: var(--color-accent);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .section-bg {
+        background-color: var(--color-primary);
+    }
 }

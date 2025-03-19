@@ -73,13 +73,6 @@
     --space-80: 320px;
     --space-96: 384px;
 
-    /* Bordas */
-    --border-none: none;
-    --border: 1px solid;
-    --border-2: 2px solid;
-    --border-4: 4px solid;
-    --border-8: 8px solid;
-
     /* Durações */
     --duration-75: 75ms ease-in-out;
     --duration-150: 150ms ease-in-out;

@@ -1,150 +1,51 @@
-.conteudo {
-    width: 100%;
-    height: auto;
-    align-items: center;
+.main-background {
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.principal {
-    background-color: var(--azul-escuro);
+@media (prefers-color-scheme: light) {
+    .main-background {
+        background-image: url("../../../../images/pages/index/main-bg-light.png");
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .main-background {
+        background-image: url("../../../../images/pages/index/main-bg-dark.png");
+    }
+}
+
+.main-container {
     width: 100%;
-    min-height: 150px;
-    padding: 30px 0px;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-top: 3rem;
 }
 
-.principal .escrita {
-    max-width: 550px;
-    width: 95%;
-    height: auto;
+.main-container .main-info {
     display: flex;
     flex-direction: column;
-    gap: 20px 0px;
-}
-
-.principal .escrita .titulo {
-    color: var(--azul-claro);
-    font-size: 1.5em;
-    line-height: 1.35em;
-}
-
-.principal .escrita .paragrafo {
-    color: var(--branco);
-    font-size: 0.9em;
-    font-weight: 400;
-}
-
-.principal .escrita .botao  {
-    background-color: var(--azul-claro);
-    max-width: 270px;
-    width: 95%;
-    height: 50px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    color: var(--branco);
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 600;
 }
 
-.principal .imagem {
-    position: relative;
-    max-width: 500px;
-    width: 90%;
-    height: auto;
+.main-container .main-info h1,
+.main-container .main-info p {
+    text-wrap: balance;
+}
+
+.main-container .main-image {
     display: flex;
-    align-items: center;
-    justify-content: center;
-
+    align-items: flex-end;
 }
 
-.principal .imagem .img-principal {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.principal .imagem .icon-superior {
-    position: absolute;
-    top: -15px;
-    left: -15px;
-    width: 50px;
-    height: 50px;
-}
-
-.principal .imagem .icon-inferior{
-    position: absolute;
-    bottom: -15px;
-    right: -15px;
-    width: 50px;
-    height: 50px;
-}
-
-@media(max-width: 1150px) {
-    .principal .escrita {
-        max-width: 500px;
+@media (prefers-color-scheme: light) {
+    .main-container .main-info p {
+        color: var(--color-gray-700);
     }
 }
 
-
-@media(max-width: 1070px) {
-    .principal {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 50px 0px;
-    }
-
-    .principal .escrita {
-        max-width: 750px;
-        width: 90%;
-        align-items: center;
-    }
-
-    .principal .escrita .titulo{
-        text-align: center;
-    }
-
-    .principal .escrita .paragrafo{
-        text-align: center;
+@media (prefers-color-scheme: dark) {
+    .main-container .main-info p {
+        color: var(--color-gray-300);
     }
 }
-
-@media(max-width: 600px) {
-    .principal .escrita .titulo{
-        font-size: 1.35em;
-    }
-
-    .principal .escrita .paragrafo{
-        font-size: 0.85em;
-    }
-}
-
-@media(max-width: 400px) {
-    .principal .escrita .titulo{
-        font-size: 1.1em;
-    }
-
-    .principal .escrita .paragrafo{
-        font-size: 0.75em;
-    }
-
-    .principal .escrita .botao{
-        max-width: 200px;
-        font-size: 0.9em;
-    }
-
-    .principal .imagem {
-        width: 85%;
-    }
-}
-
-
-
-
-
-
-
