@@ -1,0 +1,173 @@
+.input {
+    display: flex;
+    gap: 1rem;
+    padding: .625rem;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.input label {
+    width: 16px;
+    height: 16px;
+}
+
+.input input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.input svg {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+@media (prefers-color-scheme: light) {
+    .input:not(:focus-within):has(input:placeholder-shown) {
+        border: solid 1px var(--color-gray-200);
+        color: var(--color-gray-500);
+    }
+
+    .input:not(:focus-within):has(input:placeholder-shown) svg,
+    .input:not(:focus-within):has(input:placeholder-shown) ::placeholder {
+        color: var(--color-gray-500);
+        stroke: var(--color-gray-500);
+        /* fill: var(--color-gray-500); */
+    }
+
+    .input:focus-within:has(input:placeholder-shown) {
+        border: 1px solid var(--color-gray-700);
+        color: var(--color-gray-700);
+    }
+
+    .input:focus-within:has(input:placeholder-shown) svg,
+    .input:focus-within:has(input:placeholder-shown) ::placeholder {
+        color: var(--color-gray-700);
+        stroke: var(--color-gray-700);
+        /* fill: var(--color-gray-700); */
+    }
+
+    .input[data-error="true"]:has(input:placeholder-shown) {
+        border: solid 1px var(--color-error);
+        color: var(--color-gray-500);
+    }
+
+    .input[data-error="true"]:has(input:placeholder-shown) svg {
+        color: var(--color-error);
+        stroke: var(--color-error);
+        /* fill: var(--color-error); */
+    }
+
+    .input[data-error="true"]:has(input:placeholder-shown) ::placeholder {
+        color: var(--color-gray-500);
+    }
+
+    .input:not(:focus-within):has(input:not(:placeholder-shown)) {
+        border: solid 1px var(--color-gray-200);
+        color: var(--color-gray-700);
+    }
+
+    .input:not(:focus-within):has(input:not(:placeholder-shown)) svg {
+        color: var(--color-gray-700);
+        stroke: var(--color-gray-700);
+        /* fill: var(--color-gray-700); */
+    }
+
+    .input:focus-within:has(input:not(:placeholder-shown)) {
+        border: solid 1px var(--color-gray-700);
+        color: var(--color-gray-700);
+    }
+
+    .input:focus-within:has(input:not(:placeholder-shown)) svg {
+        color: var(--color-gray-700);
+        stroke: var(--color-gray-700);
+        /* fill: var(--color-gray-700); */
+    }
+
+    .input[data-error="true"]:has(input:not(:placeholder-shown)) {
+        border: solid 1px var(--color-error);
+        color: var(--color-gray-700);
+    }
+
+    .input[data-error="true"]:has(input:not(:placeholder-shown)) svg {
+        color: var(--color-error);
+        stroke: var(--color-error);
+        /* fill: var(--color-error); */
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .input:not(:focus-within):has(input:placeholder-shown) {
+        border: solid 1px var(--color-gray-800);
+        color: var(--color-gray-500);
+    }
+
+    .input:not(:focus-within):has(input:placeholder-shown) svg,
+    .input:not(:focus-within):has(input:placeholder-shown) ::placeholder {
+        color: var(--color-gray-500);
+        stroke: var(--color-gray-500);
+        /* fill: var(--color-gray-500); */
+    }
+
+    .input:focus-within:has(input:placeholder-shown) {
+        border: 1px solid var(--color-gray-300);
+        color: var(--color-gray-300);
+    }
+
+    .input:focus-within:has(input:placeholder-shown) svg,
+    .input:focus-within:has(input:placeholder-shown) ::placeholder {
+        color: var(--color-gray-300);
+        stroke: var(--color-gray-300);
+        /* fill: var(--color-gray-300); */
+    }
+
+    .input[data-error="true"]:has(input:placeholder-shown) {
+        border: solid 1px var(--color-error);
+        color: var(--color-gray-500);
+    }
+
+    .input[data-error="true"]:has(input:placeholder-shown) svg {
+        color: var(--color-error);
+        stroke: var(--color-error);
+        /* fill: var(--color-error); */
+    }
+
+    .input[data-error="true"]:has(input:placeholder-shown) ::placeholder {
+        color: var(--color-gray-500);
+    }
+
+    .input:not(:focus-within):has(input:not(:placeholder-shown)) {
+        border: solid 1px var(--color-gray-800);
+        color: var(--color-gray-300);
+    }
+
+    .input:not(:focus-within):has(input:not(:placeholder-shown)) svg {
+        color: var(--color-gray-300);
+        stroke: var(--color-gray-300);
+        /* fill: var(--color-gray-300); */
+    }
+
+    .input:focus-within:has(input:not(:placeholder-shown)) {
+        border: solid 1px var(--color-gray-300);
+        color: var(--color-gray-300);
+    }
+
+    .input:focus-within:has(input:not(:placeholder-shown)) svg {
+        color: var(--color-gray-300);
+        stroke: var(--color-gray-300);
+        /* fill: var(--color-gray-300); */
+    }
+
+    .input[data-error="true"]:has(input:not(:placeholder-shown)) {
+        border: solid 1px var(--color-error);
+        color: var(--color-gray-300);
+    }
+
+    .input[data-error="true"]:has(input:not(:placeholder-shown)) svg {
+        color: var(--color-error);
+        stroke: var(--color-error);
+        /* fill: var(--color-error); */
+    }
+}

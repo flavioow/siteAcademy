@@ -1,4 +1,8 @@
 @import './partials/normalize.css';
 @import './partials/variable.css';
+@import './partials/layout.css';
 @import './partials/footer.css';
 @import './partials/header.css';
+@import './partials/input.css';
+@import './partials/button.css';
+@import './partials/station-card.css';

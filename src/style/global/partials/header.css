@@ -43,70 +43,15 @@
     gap: 1rem;
 }
 
-.header .menu .menu-item .item,
-.header .menu .btn {
-    padding: 1rem .25rem;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-    border-radius: 0.625rem;
-}
-
-@media (prefers-color-scheme: light) {
-    .header .menu .menu-item .item {
-        color: var(--color-gray-700);
-
-        &:hover,
-        &.ativo {
-            color: var(--color-gray-800);
-        }
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    .header .menu .menu-item .item {
-        color: var(--color-gray-300);
-
-        &:hover,
-        &.ativo {
-            color: var(--color-gray-200);
-        }
-    }
-}
-
-.header .menu .btn {
-    padding: 1rem;
-}
-
-@media (prefers-color-scheme: light) {
-    .header .menu .btn {
-        background-color: var(--color-accent);
-
-        &:hover {
-            background-color: color-mix(in srgb, var(--color-accent) 100%, var(--color-gray-100) 20%);
-            color: color-mix(in srgb, var(--color-gray-700) 100%, var(--color-gray-100) 20%);
-        }
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    .header .menu .btn {
-        background-color: var(--color-primary);
-
-        &:hover {
-            background-color: color-mix(in srgb, var(--color-primary) 100%, var(--color-gray-900) 20%);
-            color: color-mix(in srgb, var(--color-gray-300) 100%, var(--color-gray-900) 20%);
-        }
-    }
-}
-
 /*
     === Devices Breakpoints ===
 */
 
 @media screen and (max-width: 780px) {
     .header {
+        padding: 1rem 2rem;
 
-        & .menu .menu-item .item,
+        & .menu .menu-item .btn,
         & .header-buttons #close-menu,
         & .divider {
             display: none;
@@ -123,7 +68,7 @@
             align-items: start;
             height: 100dvh;
 
-            & .menu .menu-item .item,
+            & .menu .menu-item .btn,
             & .header-buttons,
             & .divider {
                 display: flex !important;
@@ -146,7 +91,7 @@
                 padding: 1rem 0;
             }
 
-            & .menu .menu-item .item {
+            & .menu .menu-item .btn {
                 width: 100%;
             }
 
@@ -210,7 +155,6 @@
         display: block;
         align-items: center;
         gap: 1rem;
-        padding: 3rem 0;
 
         &>.mobile {
             display: none;

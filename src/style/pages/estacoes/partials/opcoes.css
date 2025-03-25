@@ -1,0 +1,80 @@
+.options-container {
+    height: fit-content;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.options .filter-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.options .filter-group svg {
+    display: none;
+    stroke: var(--color-gray-500);
+    cursor: pointer;
+}
+
+.options .filter-group .filter-tag {
+    display: grid;
+    place-items: center;
+    padding: .625rem;
+    color: var(--color-gray-500);
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all .3s ease-in-out;
+
+    &.ativo {
+        background-color: var(--color-gray-500);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .options .filter-group .filter-tag {
+        border: solid 1px var(--color-gray-200);
+
+        &:hover {
+            background-color: var(--color-gray-200);
+        }
+
+        &.acativotive {
+            color: var(--color-gray-200);
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .options .filter-group .filter-tag {
+        border: solid 1px var(--color-gray-800);
+
+        &:hover {
+            background-color: var(--color-gray-800);
+        }
+
+        &.active {
+            color: var(--color-gray-800);
+        }
+    }
+}
+
+/*
+    === Devices Breakpoints ===
+*/
+
+@media screen and (max-width: 780px) {
+    .options .filter-group .filter-tag {
+        display: none;
+    }
+
+    .options .filter-group svg {
+        display: block;
+    }
+}

@@ -17,3 +17,15 @@
         background-color: var(--color-gray-800);
     }
 }
+
+/*
+    === Devices Breakpoints ===
+*/
+
+@media screen and (max-width: 780px) {
+    .footer {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+    }
+}
