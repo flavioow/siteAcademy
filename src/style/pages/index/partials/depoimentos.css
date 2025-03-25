@@ -17,11 +17,35 @@
     .depoiment-card q {
         color: var(--color-gray-600);
     }
+
+    .depoiment-info h5 {
+        color: var(--color-gray-700);
+    }
+
+    .depoiment-info small {
+        color: var(--color-gray-600);
+    }
+
+    .depoiment-info img {
+        background-color: var(--color-accent);
+    }
 }
 
 @media (prefers-color-scheme: dark) {
     .depoiment-card q {
         color: var(--color-gray-400);
+    }
+
+    .depoiment-info h5 {
+        color: var(--color-gray-300);
+    }
+
+    .depoiment-info small {
+        color: var(--color-gray-400);
+    }
+
+    .depoiment-info img {
+        background-color: var(--color-primary);
     }
 }
 
@@ -29,37 +53,9 @@
     display: flex;
     width: 100%;
     gap: 0.75rem;
+}
 
-    @media (prefers-color-scheme: light) {
-        & h5 {
-            color: var(--color-gray-700);
-        }
-
-        & small {
-            color: var(--color-gray-600);
-        }
-
-        & img {
-            background-color: var(--color-accent);
-        }
-    }
-
-    @media (prefers-color-scheme: dark) {
-        & h5 {
-            color: var(--color-gray-300);
-        }
-
-        & small {
-            color: var(--color-gray-400);
-        }
-
-        & img {
-            background-color: var(--color-primary);
-        }
-    }
-
-    & img {
-        aspect-ratio: 1/1;
-        border-radius: 50%;
-    }
+.depoiment-info img {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
 }
