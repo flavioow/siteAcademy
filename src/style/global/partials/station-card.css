@@ -6,6 +6,7 @@
     border-radius: 8px;
     transition: all .2s ease-in-out;
     cursor: pointer;
+    min-width: var(--space-80);
 }
 
 .station-card:hover {
