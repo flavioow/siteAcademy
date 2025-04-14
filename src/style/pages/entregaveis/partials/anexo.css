@@ -1,0 +1,78 @@
+.anexo-container {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 10px !important;
+    padding: 2rem;
+}
+
+form.anexo-container {
+    align-items: start;
+    cursor: pointer;
+}
+
+.anexo-img {
+    color: var(--color-gray-500);
+    stroke: var(--color-gray-500);
+    font-weight: normal;
+}
+
+label[for="anexo-img"]:not(:has(.anexo-container)) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (prefers-color-scheme: light) {
+    .anexo-container {
+        border: 1px solid var(--color-gray-200);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .anexo-container {
+        border: 1px solid var(--color-gray-800);
+    }
+}
+
+.anext-size {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+
+.anext-size h1 {
+    font-size: 1em;
+}
+
+.uploud-boxs {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid #E4E4E7;
+    width: 300px;
+    overflow: hidden;
+}
+
+.elemento {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 5px;
+    height: 80px;
+    background-color: #CFCCFF;
+}
+
+.uploud-group {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.icon svg {
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}

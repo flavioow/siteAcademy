@@ -1,0 +1,40 @@
+.status-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.status {
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid;
+    display: flex;
+    gap: .5rem;
+    padding: .5rem;
+    font-weight: normal;
+}
+
+.status.atrasado {
+    color: var(--color-error);
+    border-color: var(--color-error);
+    display: flex;
+    align-items: center;
+}
+
+.status.status.atrasado svg {
+    fill: var(--color-error);
+    stroke: var(--color-error);
+}
+
+.status.entregue {
+    color: var(--color-success);
+    border-color: var(--color-success);
+    display: flex;
+    align-items: center;
+}
+
+.status.status.status.entregue svg {
+    fill: var(--color-success);
+    stroke: var(--color-success);
+}

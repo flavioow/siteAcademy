@@ -1,0 +1,252 @@
+.all {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.options .filter-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.options .filter-group svg {
+    display: none;
+    stroke: var(--color-gray-500);
+    cursor: pointer;
+}
+
+.options .filter-group .filter-tag {
+    display: grid;
+    place-items: center;
+    padding: .625rem;
+    color: var(--color-gray-500);
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+.options .filter-group .filter-tag.ativo {
+    background-color: var(--color-gray-500);
+}
+
+@media (prefers-color-scheme: light) {
+    .options .filter-group .filter-tag {
+        border: solid 1px var(--color-gray-200);
+    }
+
+    .options .filter-group .filter-tag:hover {
+        background-color: var(--color-gray-200);
+    }
+
+    .options .filter-group .filter-tag.acativotive {
+        color: var(--color-gray-200);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .options .filter-group .filter-tag {
+        border: solid 1px var(--color-gray-800);
+    }
+
+    .options .filter-group .filter-tag:hover {
+        background-color: var(--color-gray-800);
+    }
+
+    .options .filter-group .filter-tag.active {
+        color: var(--color-gray-800);
+    }
+}
+
+.tag {
+    text-decoration: none;
+    color: #71717A;
+    border: solid 1px gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.search-bar {
+    display: flex;
+    background-color: #E4E4E7;
+    border: solid 2px #E4E4E7;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.searchbar {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td,
+table th {
+    border: 0px solid #ffffff;
+    padding: 20px;
+    text-align: left;
+}
+
+tfoot td,
+table th {
+    background: #ddd;
+}
+
+tfoot td {
+    font-style: italic;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.box {
+    border: solid 0.5px var(--color-gray-200);
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 11rem;
+    height: 8rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box p {
+    display: flex;
+    justify-content: center;
+}
+
+.pagefication {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.square {
+    border-radius: 8px;
+    padding: 15px;
+    margin-right: 2rem;
+    border: 1px solid var(--color-gray-200);
+    border-radius: 10px;
+    padding: 1rem 3vh;
+}
+
+.pagefication .square {
+    border: solid 1px var(--color-gray-200);
+}
+
+.pagefication .square:hover {
+    background-color: var(--color-gray-200);
+}
+
+.pagefication .square {
+    color: var(--color-gray-200);
+}
+
+.square a {
+    text-decoration: none;
+}
+
+.everything {
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+    .options nav .tag {
+        display: none;
+    }
+
+    .everything {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .boxes {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+    }
+
+    aside {
+        overflow: hidden;
+    }
+
+    .table-scroll {
+        overflow-x: scroll;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .options .filter-group .filter-tag {
+        border: solid 1px var(--color-gray-200);
+    }
+
+    .options .filter-group .filter-tag:hover {
+        background-color: var(--color-gray-200);
+    }
+
+    .options .filter-group .filter-tag.acativotive {
+        color: var(--color-gray-200);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .options .filter-group .filter-tag {
+        border: solid 1px var(--color-gray-800);
+    }
+
+    .options .filter-group .filter-tag:hover {
+        background-color: var(--color-gray-800);
+    }
+
+    .options .filter-group .filter-tag.active {
+        color: var(--color-gray-800);
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .options .filter-group .filter-tag {
+        display: none;
+    }
+
+    .options .filter-group svg {
+        display: block;
+    }
+}

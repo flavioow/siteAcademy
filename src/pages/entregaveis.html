@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/pages/estacoes/estacoes.css">
-    <script src="../../src/script/global/navToggle.js" defer></script>
-    <title>Estações - Academy</title>
+    <link rel="stylesheet" href="../style/pages/entregaveis/entregaveis.css">
+    <link rel="stylesheet" href="../../src/style/global/global.css">
+    <title>Entregáveis</title>
 </head>
 
 <body>
+
     <header class="header" id="header">
         <section class="header-buttons">
             <svg id="menu" class="header-icon" width="18" height="14" viewBox="0 0 18 14" fill="none"
@@ -73,7 +74,7 @@
         <section class="menu">
             <nav class="menu-item">
                 <a href="./sobre.html" class="btn">Sobre</a>
-                <a href="./estacoes.html" class="btn ativo">Estações</a>
+                <a href="./estacoes.html" class="btn">Estações</a>
                 <a href="./desenvolvedores.html" class="btn">Devs</a>
                 <a href="./contato.html" class="btn">Contato</a>
                 <a href="#" class="btn">Newsletter</a>
@@ -84,97 +85,177 @@
         </section>
     </header>
 
-    <main class="content-grid">
-        <h1>Estações</h1>
+    <main class="entregaveis content-grid">
+        <div class="titulo">
+            <h1>Entregáveis</h1>
+            <h4>Criar o Figma</h4>
+        </div>
 
-        <div class="options-container">
-            <div class="options">
-                <form action="" method="get" name="search-form">
-                    <div class="input">
-                        <label for="searchbar">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <circle cx="11" cy="11" r="8" />
-                                <path d="m21 21-4.3-4.3" />
-                            </svg>
-                        </label>
-                        <input type="text" name="searchbar" id="searchbar" class="search-input" placeholder="Pesquisar">
-                    </div>
-                </form>
-                <div class="filter-group">
-                    <a href="#" class="filter-tag">Tecnologia da Informação</a>
-                    <a href="#" class="filter-tag">Gestão</a>
-                    <a href="#" class="filter-tag">Comunicação</a>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-list-filter">
-                        <path d="M3 6h18" />
-                        <path d="M7 12h10" />
-                        <path d="M10 18h4" />
-                    </svg>
+        <section class="principal">
+            <h3>Informações principais</h3>
+
+            <label class="label-container">
+                Status
+                <div class="status-container">
+                    <a href="#" class="status atrasado">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                            fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-circle">
+                            <circle cx="12" cy="12" r="10" />
+                        </svg>
+                        Atrasado</a>
+                    <a href="#" class="status entregue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                            fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-circle">
+                            <circle cx="12" cy="12" r="10" />
+                        </svg>
+                        Entregue</a>
                 </div>
+            </label>
+
+            <form action="" method="get" class="campos-container">
+                <div class="campos">
+                    <label for="proprietario" class="label-container">
+                        Proprietário
+                        <div class="input">
+                            <label for="proprietario">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                                    <circle cx="12" cy="7" r="4" />
+                                </svg>
+                            </label>
+                            <input type="text" name="proprietario" id="proprietario" class="search-input"
+                                placeholder="Pesquisar" required>
+                        </div>
+                    </label>
+
+                    <label for="gestor" class="label-container">
+                        Gestor
+                        <div class="input">
+                            <label for="gestor">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                                    <circle cx="12" cy="7" r="4" />
+                                </svg>
+                            </label>
+                            <input type="text" name="gestor" id="gestor" class="search-input" placeholder="Pesquisar"
+                                required>
+                        </div>
+                    </label>
+
+                    <label for="inicio" class="label-container">
+                        Início
+                        <div class="input">
+                            <label for="inicio">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M8 2v4" />
+                                    <path d="M16 2v4" />
+                                    <rect width="18" height="18" x="3" y="4" rx="2" />
+                                    <path d="M3 10h18" />
+                                    <path d="M8 14h.01" />
+                                    <path d="M12 14h.01" />
+                                    <path d="M16 14h.01" />
+                                    <path d="M8 18h.01" />
+                                    <path d="M12 18h.01" />
+                                    <path d="M16 18h.01" />
+                                </svg>
+                            </label>
+                            <input type="date" name="inicio" id="inicio" class="search-input" placeholder="Pesquisar"
+                                required>
+                        </div>
+                    </label>
+
+                    <label for="final" class="label-container">
+                        Final
+                        <div class="input">
+                            <label for="final">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M8 2v4" />
+                                    <path d="M16 2v4" />
+                                    <rect width="18" height="18" x="3" y="4" rx="2" />
+                                    <path d="M3 10h18" />
+                                    <path d="M8 14h.01" />
+                                    <path d="M12 14h.01" />
+                                    <path d="M16 14h.01" />
+                                    <path d="M8 18h.01" />
+                                    <path d="M12 18h.01" />
+                                    <path d="M16 18h.01" />
+                                </svg>
+                            </label>
+                            <input type="date" name="final" id="final" class="search-input" placeholder="Pesquisar"
+                                required>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="descricao">
+                    <label for="descricao" class="label-container">
+                        Descrição
+                        <textarea id="descricao" name="descricao" placeholder="Adicionar Descrição do Projeto" rows="10"
+                            cols="50"></textarea>
+                    </label>
+                </div>
+            </form>
+
+        </section>
+
+
+        <section>
+            <h3>Anexos</h3>
+            <div class="uploud-group">
+                <!-- <div class="uploud-boxs">
+                        <div class="elemento">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                            </div>
+                            </div>
+                            <div class="texto">
+                                Detalhes_figma.docx
+                            </div>
+                        </div>
+                        <div class="uploud-boxs">
+                            <div class="elemento">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                                </div>
+                                </div>
+                                <div class="texto">
+                                    Detalhes_figma.docx
+                                </div>
+                            </div> -->
             </div>
-        </div>
 
-        <div class="card-container">
-            <a class="station-card card-ti">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 16 14" fill="none">
-                        <path
-                            d="M2.54185 9.20142C1.99351 8.70158 1.57156 8.08662 1.30862 7.4041C1.04568 6.72158 0.94881 5.98979 1.02549 5.26533C1.10217 4.54086 1.35035 3.84314 1.75084 3.22613C2.15132 2.60912 2.69338 2.08934 3.33509 1.70702C3.9768 1.32469 4.70096 1.09005 5.45156 1.02124C6.20216 0.952437 6.95909 1.05131 7.6638 1.31022C8.36852 1.56913 9.00213 1.98113 9.51564 2.51436C10.0291 3.04759 10.4088 3.68776 10.6252 4.38536H11.8823C12.5522 4.39408 13.2019 4.6082 13.7376 4.9968C14.2733 5.38541 14.6673 5.92838 14.8626 6.54735C15.058 7.16631 15.0447 7.82923 14.8246 8.44039C14.6044 9.05156 14.1889 9.57935 13.638 9.94757M10.6182 11.4399L9.98612 11.2364M6.0533 9.74407L5.42124 9.54058M7.0365 13L7.24719 12.3895M8.79222 8.59093L9.00291 7.98045M9.14337 13L8.86245 12.3217M7.17696 8.65876L6.89604 7.98045M5.42124 11.5755L6.12352 11.3042M9.91589 9.67624L10.6182 9.40491M10.1266 10.4902C10.1266 11.6141 9.1833 12.5252 8.01971 12.5252C6.85611 12.5252 5.91284 11.6141 5.91284 10.4902C5.91284 9.36635 6.85611 8.45527 8.01971 8.45527C9.1833 8.45527 10.1266 9.36635 10.1266 10.4902Z"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
+            <label for="anexo-img" class="label-container">
+                Anexos
+                <form action="" method="get" class="anexo-container">
+                    <label for="anexo-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="anexo-img">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="17 8 12 3 7 8" />
+                            <line x1="12" x2="12" y1="3" y2="15" />
+                        </svg>
+                        <span class="anexo-img">Arraste os arquivos ou selecione um do seu computador</span>
+                        <input type="file" class="anexo-img" id="anexo-img">
+                    </label>
+                </form>
+            </label>
 
-                    <h5>Hard Code</h5>
-                </div>
-
-                <p>Tecnologia da inovação</p>
-            </a>
-
-            <a class="station-card card-gestao">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 16 14" fill="none">
-                        <path
-                            d="M2.54185 9.20142C1.99351 8.70158 1.57156 8.08662 1.30862 7.4041C1.04568 6.72158 0.94881 5.98979 1.02549 5.26533C1.10217 4.54086 1.35035 3.84314 1.75084 3.22613C2.15132 2.60912 2.69338 2.08934 3.33509 1.70702C3.9768 1.32469 4.70096 1.09005 5.45156 1.02124C6.20216 0.952437 6.95909 1.05131 7.6638 1.31022C8.36852 1.56913 9.00213 1.98113 9.51564 2.51436C10.0291 3.04759 10.4088 3.68776 10.6252 4.38536H11.8823C12.5522 4.39408 13.2019 4.6082 13.7376 4.9968C14.2733 5.38541 14.6673 5.92838 14.8626 6.54735C15.058 7.16631 15.0447 7.82923 14.8246 8.44039C14.6044 9.05156 14.1889 9.57935 13.638 9.94757M10.6182 11.4399L9.98612 11.2364M6.0533 9.74407L5.42124 9.54058M7.0365 13L7.24719 12.3895M8.79222 8.59093L9.00291 7.98045M9.14337 13L8.86245 12.3217M7.17696 8.65876L6.89604 7.98045M5.42124 11.5755L6.12352 11.3042M9.91589 9.67624L10.6182 9.40491M10.1266 10.4902C10.1266 11.6141 9.1833 12.5252 8.01971 12.5252C6.85611 12.5252 5.91284 11.6141 5.91284 10.4902C5.91284 9.36635 6.85611 8.45527 8.01971 8.45527C9.1833 8.45527 10.1266 9.36635 10.1266 10.4902Z"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-
-                    <h5>BPO</h5>
-                </div>
-
-                <p>Gestão</p>
-            </a>
-
-            <a class="station-card card-marketing">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 16 14" fill="none">
-                        <path
-                            d="M2.54185 9.20142C1.99351 8.70158 1.57156 8.08662 1.30862 7.4041C1.04568 6.72158 0.94881 5.98979 1.02549 5.26533C1.10217 4.54086 1.35035 3.84314 1.75084 3.22613C2.15132 2.60912 2.69338 2.08934 3.33509 1.70702C3.9768 1.32469 4.70096 1.09005 5.45156 1.02124C6.20216 0.952437 6.95909 1.05131 7.6638 1.31022C8.36852 1.56913 9.00213 1.98113 9.51564 2.51436C10.0291 3.04759 10.4088 3.68776 10.6252 4.38536H11.8823C12.5522 4.39408 13.2019 4.6082 13.7376 4.9968C14.2733 5.38541 14.6673 5.92838 14.8626 6.54735C15.058 7.16631 15.0447 7.82923 14.8246 8.44039C14.6044 9.05156 14.1889 9.57935 13.638 9.94757M10.6182 11.4399L9.98612 11.2364M6.0533 9.74407L5.42124 9.54058M7.0365 13L7.24719 12.3895M8.79222 8.59093L9.00291 7.98045M9.14337 13L8.86245 12.3217M7.17696 8.65876L6.89604 7.98045M5.42124 11.5755L6.12352 11.3042M9.91589 9.67624L10.6182 9.40491M10.1266 10.4902C10.1266 11.6141 9.1833 12.5252 8.01971 12.5252C6.85611 12.5252 5.91284 11.6141 5.91284 10.4902C5.91284 9.36635 6.85611 8.45527 8.01971 8.45527C9.1833 8.45527 10.1266 9.36635 10.1266 10.4902Z"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-
-                    <h5>Marketing</h5>
-                </div>
-
-                <p>Comunicação Digital</p>
-            </a>
-
-            <a class="station-card card-academico">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 16 14" fill="none">
-                        <path
-                            d="M2.54185 9.20142C1.99351 8.70158 1.57156 8.08662 1.30862 7.4041C1.04568 6.72158 0.94881 5.98979 1.02549 5.26533C1.10217 4.54086 1.35035 3.84314 1.75084 3.22613C2.15132 2.60912 2.69338 2.08934 3.33509 1.70702C3.9768 1.32469 4.70096 1.09005 5.45156 1.02124C6.20216 0.952437 6.95909 1.05131 7.6638 1.31022C8.36852 1.56913 9.00213 1.98113 9.51564 2.51436C10.0291 3.04759 10.4088 3.68776 10.6252 4.38536H11.8823C12.5522 4.39408 13.2019 4.6082 13.7376 4.9968C14.2733 5.38541 14.6673 5.92838 14.8626 6.54735C15.058 7.16631 15.0447 7.82923 14.8246 8.44039C14.6044 9.05156 14.1889 9.57935 13.638 9.94757M10.6182 11.4399L9.98612 11.2364M6.0533 9.74407L5.42124 9.54058M7.0365 13L7.24719 12.3895M8.79222 8.59093L9.00291 7.98045M9.14337 13L8.86245 12.3217M7.17696 8.65876L6.89604 7.98045M5.42124 11.5755L6.12352 11.3042M9.91589 9.67624L10.6182 9.40491M10.1266 10.4902C10.1266 11.6141 9.1833 12.5252 8.01971 12.5252C6.85611 12.5252 5.91284 11.6141 5.91284 10.4902C5.91284 9.36635 6.85611 8.45527 8.01971 8.45527C9.1833 8.45527 10.1266 9.36635 10.1266 10.4902Z"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-
-                    <h5>GET</h5>
-                </div>
-
-                <p>Acadêmicas</p>
-            </a>
-        </div>
-
+            <div class="btn-container">
+                <a href="#" class="btn primary">Salvar Alterações</a>
+                <a href="#" class="btn">Cancelar</a>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -244,8 +325,6 @@
 
         <p>Eniac Academy © todos os direitos reservados</p>
     </footer>
-
-    <script src="../script/menuShow.js"></script>
 </body>
 
 </html>

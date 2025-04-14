@@ -16,6 +16,23 @@
     border: none;
     outline: none;
     font-size: 1rem;
+    width: 100%;
+    border-radius: 0 !important;
+}
+
+textarea {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 10px !important;
+    min-height: 6lh;
+    max-height: 12lh;
+}
+
+textarea::placeholder {
+    color: var(--color-gray-500);
 }
 
 .input svg {
@@ -25,19 +42,19 @@
 }
 
 @media (prefers-color-scheme: light) {
-    .input:not(:focus-within):has(input:placeholder-shown) {
+    .input:not(:focus-within):has(input:placeholder-shown, ) {
         border: solid 1px var(--color-gray-200);
         color: var(--color-gray-500);
     }
 
-    .input:not(:focus-within):has(input:placeholder-shown) svg,
-    .input:not(:focus-within):has(input:placeholder-shown) ::placeholder {
+    .input:not(:focus-within):has(input:placeholder-shown, ) svg,
+    .input:not(:focus-within):has(input:placeholder-shown, ) ::placeholder {
         color: var(--color-gray-500);
         stroke: var(--color-gray-500);
         /* fill: var(--color-gray-500); */
     }
 
-    .input:focus-within:has(input:placeholder-shown) {
+    .input:focus-within:has(input:placeholder-shown, ) {
         border: 1px solid var(--color-gray-700);
         color: var(--color-gray-700);
     }
@@ -95,6 +112,10 @@
         color: var(--color-error);
         stroke: var(--color-error);
         /* fill: var(--color-error); */
+    }
+
+    textarea {
+        border: 1px solid var(--color-gray-200);
     }
 }
 
@@ -169,5 +190,9 @@
         color: var(--color-error);
         stroke: var(--color-error);
         /* fill: var(--color-error); */
+    }
+
+    textarea {
+        border: 1px solid var(--color-gray-800);
     }
 }
