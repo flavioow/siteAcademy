@@ -1,0 +1,27 @@
+{
+    "short_name": "Academy",
+    "name": "Eniac Academy",
+    "description": "Potencializando conhecimento, transformando alunos em profissionais.",
+    "start_url": ".",
+    "scope": ".",
+    "id": "/",
+    "theme_color": "#5B54DE",
+    "background_color": "#F4F4F5",
+    "lang": "pt-br",
+    "orientation": "portrait",
+    "display": "standalone",
+    "prefer_related_applications": false,
+    "display_override": [
+        "window-controls-overlay",
+        "standalone"
+    ],
+    "categories": [
+        "educacional"
+    ],
+    "protocol_handlers": [
+        {
+            "protocol": "web+eniacacademy",
+            "url": "/?url=%s"
+        }
+    ]
+}

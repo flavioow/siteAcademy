@@ -104,3 +104,22 @@
     /* Desktop = 1280px */
     /* TV = 1536px */
 }
+
+
+:root {
+    color-scheme: light dark;
+
+    /* Cores Principais */
+    --color-primary: #5b54de;
+    --color-primary--rgb: 91, 84, 222;
+    --color-secondary: #cfccff;
+    --color-secondary--rgb: 207, 204, 255;
+    --color-accent: #eab948;
+    --color-accent--rgb: 234, 185, 72;
+
+    /* Cores de Feedback */
+    --color-success: #13ce66;
+    --color-success--rgb: 19, 206, 102;
+    --color-error: #ff4949;
+    --color-error--rgb: 255, 73, 73;
+}

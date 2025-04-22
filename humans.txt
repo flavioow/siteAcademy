@@ -1,0 +1,13 @@
+                        _
+     /\                | |
+    /  \   ___ __ _  __| | ___ _ __ ___  _   _
+   / /\ \ / __/ _` |/ _` |/ _ \ '_ ` _ \| | | |
+  / ____ \ (_| (_| | (_| |  __/ | | | | | |_| |
+ /_/    \_\___\__,_|\__,_|\___|_| |_| |_|\__, |
+                                          __/ |
+                                         |___/
+
+/* Time */
+Front-end: Flávio Henrique (flavioow), Kevin Simões (kevin-simoes), Cauã Rodrigues (caua-rodrigues), Felipe Rodrigues (Fe-bot34), Thiago Rodrigues (ThiG0-bot)
+
+Back-end: Mateus Teixeira (Mateus-Teixeira-WOW), Kayky Alves (Kayky1111), Gabriella Seregati (gabriellaseregati), Luiz Selim (selimnds), Alexandre Raposo, Algusto Morais (zebigode000)
