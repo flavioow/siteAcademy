@@ -50,35 +50,69 @@ html {
 }
 
 h1 {
-    font-size: 4.210rem;
+    font-size: 3.053rem;
+    /* 48.8px */
 }
 
 h2 {
-    font-size: 3.158rem;
+    font-size: 2.442rem;
+    /* 39.04px */
 }
 
 h3 {
-    font-size: 2.369rem;
+    font-size: 1.954rem;
+    /* 31.2px */
 }
 
 h4 {
-    font-size: 1.777rem;
+    font-size: 1.563rem;
+    /* 24.96px */
 }
 
 h5 {
-    font-size: 1.333rem;
-}
-
-p {
-    font-size: 1.000rem;
+    font-size: 1.250rem;
+    /* 20px */
 }
 
 small {
-    font-size: 0.750rem;
+    font-size: 0.800rem;
+    /* 12.8px */
 }
 
 .section-bg :is(h1, h2, h3, h4, h5, h6) {
     text-wrap: pretty;
+}
+
+@media screen and (max-width: 780px) {
+    h1 {
+        font-size: 2.489rem;
+        /* 39.84px */
+    }
+
+    h2 {
+        font-size: 2.074rem;
+        /* 33.12px */
+    }
+
+    h3 {
+        font-size: 1.728rem;
+        /* 27.68px */
+    }
+
+    h4 {
+        font-size: 1.440rem;
+        /* 23.04px */
+    }
+
+    h5 {
+        font-size: 1.200rem;
+        /* 19.2px */
+    }
+
+    small {
+        font-size: 0.833rem;
+        /* 13.28px */
+    }
 }
 
 @media (prefers-color-scheme: light) {
