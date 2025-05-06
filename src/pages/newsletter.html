@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/pages/lowcode/lowcode.css">
-    <title>Low Code - Academy</title>
+    <link rel="stylesheet" href="../style/pages/sobre/sobre.css">
+    <script src="../../src/script/global/navToggle.js" defer></script>
+    <link rel="stylesheet" href="../style/pages/newsletter/newsletter.css">
+    <title>Academy One - Sobre</title>
 </head>
 
 <body>
@@ -28,11 +31,6 @@
                 <a href="#">Entre para acessar o perfil</a>
             </div>
         </section>
-
-        <div class="divider">
-            <p>Menu</p>
-            <div class="line"></div>
-        </div>
 
         <section class="logo">
             <a href="../../index.html">
@@ -71,166 +69,88 @@
 
         <section class="menu">
             <nav class="menu-item">
-                <a href="./sobre.html" class="btn ativo">Sobre</a>
+                <a href="./sobre.html" class="btn">Sobre</a>
                 <a href="./estacoes.html" class="btn">Estações</a>
                 <a href="./desenvolvedores.html" class="btn">Devs</a>
                 <a href="./contato.html" class="btn">Contato</a>
-                <a href="./newsletter.html" class="btn">Newsletter</a>
+                <a href="#" class="btn ativo">Newsletter</a>
                 <a href="./dashboard.html" class="btn">Dashboard</a>
             </nav>
-
             <a href="#" class="btn primary">Entrar</a>
         </section>
     </header>
 
-    <section class="conteudo1">
-        <div class="titulo">
-            <h1>Low Code</h1>
-            <div class="itens">
-                <p>
-                    A mesa de low-code fornece um ambiente de desenvolvimento usado para criar software de aplicativo
-                    por meio de uma interface gráfica de usuário.
-                </p>
-                <img src="../images/mesas-logo/logo-lowcode.png" alt="">
+    <main class="content-grid">
+        <section class=" content-breakout">
+            <div class="title-text">
+                <h2 class="title">Newsletter</h2>
             </div>
-            <div class="botao-conteudo1">
-                <button>Faça Parte da Equipe</button>
-            </div>
-        </div>
+        </section>
 
-
-    </section>
-
-    <div class="conteudo-2">
-        <h2>Como Funciona?</h2>
-        <p>A mesa opera como um hub dinâmico, focado em capacitar os alunos a dominarem a criação de aplicativos low
-            code. Aqui, eles aprendem a conceber soluções inovadoras, implementar sistemas eficientes usando a abordagem
-            low code e a desenvolver programação de inteligência artificial para chatbots. Além disso, os participantes
-            têm a oportunidade de aprimorar suas habilidades na gestão de business intelligence, proporcionando uma
-            experiência prática e abrangente no desenvolvimento de tecnologias avançadas."</p>
-    </div>
-
-    <div class="get_main_serv">
-
-        <div id="get_main_serve">
-            <h3>Serviços</h3>
-
-            <div class="get_main_services">
-
-                <div class="get_main_wrapper">
-                    <div class="get_main_circulo"><img id="get_main_img" src="../images/global/servicos/serv1.png">
-                    </div>
-                    <p id="get_main_box">Desenvolvimento de Aplicativos Low Code.</p>
-                </div>
-
-                <div class="get_main_wrapper">
-                    <div class="get_main_circulo"><img id="get_main_img" src="../images/global/servicos/serv2.png">
-                    </div>
-                    <div class="get_main_boxboxRight">
-                        <p id="get_main_box">Desenho e Inovação</p>
-                    </div>
-                </div>
-                <div class="get_main_wrapper">
-                    <div class="get_main_circulo"><img id="get_main_img" src="../images/global/servicos/serv3.png">
-                    </div>
-                    <div class="get_main_boxboxRight">
-                        <p id="get_main_box">Gestão de Business Intelligence</p>
-                    </div>
+        <div class="everything content-breakout">
+            <div class="left-side">
+                <div class="spreadsheet">
+                    <embed src="http://example.com/the.pdf" width="100%" height="1000px" style="border-radius: 10px;"
+                        type="application/pdf">
                 </div>
             </div>
-        </div>
-    </div>
 
-    <div class="responsabilidades">
-        <h2>Responsabilidades</h2>
-        <p> Os alunos desempenham um papel ativo e responsável. Eles aplicam prontamente os conhecimentos adquiridos,
-            criando soluções práticas como aplicativos low code e sistemas, e programando inteligência artificial para
-            chatbots. A colaboração e inovação são incentivadas, assim como a gestão eficiente de projetos. Participam
-            ativamente de atividades de business intelligence, aplicando análise crítica para extrair insights valiosos.
-            Assumindo essas responsabilidades, os alunos enriquecem sua experiência e contribuem para o sucesso coletivo
-            da mesa.</p>
-    </div>
+            <aside>
+                <div class="boxes-visible">
+                    <div class="pagefication">
+                        <div class="square">
+                            <a href="#" class="page-choice">
+                                < </a>
+                        </div>
+                        <div class="square-date">
+                            <a href="#" class="page-choice" id="new-date"> Janeiro 2025 </a>
+                        </div>
+                        <div class="square">
+                            <a href="#" class="page-choice"> > </a>
+                        </div>
+                    </div>
+                    <div class="box-group">
+                        <div class="box-visible">
+                            <h3>Resumo mensal</h3>
+                            <p class="conteudo-oculto">Apelidados de “faz tudo”, descubra agora o trabalho de quem faz
+                                Front End no Eniac Academy.</p>
+                            <p class="conteudo-oculto">Por Cauã Rodrigues, 12 de Março de 2025</p>
+                            <p class="conteudo-oculto">#figma #visualstudiocode #frontend</p>
+                            <a href="#" onclick="turnvisibletxt()">
+                                <h5 id="btn-ver-mais" onclick="turnvisiblemsg()">Mostrar mais...</h5>
+                            </a>
+                        </div>
 
-    <div class="beneficios">
-        <div class="beneficios-titulo">
-            <h2>Benefícios</h2>
-        </div>
-        <div class="beneficios-imagens">
-            <div class="beneficio">
-                <img src="../images/global/beneficios/beneficios-roxo01.png" alt="Benefício 1">
-                <p>Experiência Prática e Aplicação de Conhecimento</p>
-            </div>
-            <div class="beneficio">
-                <img src="../images/global/beneficios/beneficios-roxo02.png" alt="Benefício 2">
-                <p>Envolvimento em Atividades de Business Intelligence</p>
-            </div>
-            <div class="beneficio">
-                <img src="../images/global/beneficios/beneficios-roxo03.png" alt="Benefício 2">
-                <p>Desenvolvimento de Habilidades de Gerenciamento de Projetos</p>
-            </div>
-
-        </div>
-    </div>
-
-
-    <section class="equipes">
-        <div class="carrossel-titulo">
-            <h2>Equipes</h2>
-        </div>
-        <div class="imagens-carrossel">
-            <i>
-                <input checked type="radio" name="s"
-                    style="background-image: url('https://picsum.photos/500/300?random=1');" title="Random Picture 1">
-                <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=2');"
-                    title="Random Picture 2">
-                <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=3');"
-                    title="Random Picture 3">
-                <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=4');"
-                    title="Random Picture 4">
-                <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=5');"
-                    title="Random Picture 5">
-            </i>
-        </div>
-    </section>
-
-
-
-    <div class="ideal-para">
-        <div class="ideal-para-titulo">
-            <h2>Ideal Para</h2>
-        </div>
-        <div class="ideal-imagens">
-            <div class="ideal">
-                <img src="../images/global/ideial/ideal-roxo01.png" alt="ideal1">
-                <p> Alunos com desejoso de explorar o desenvolvimento de aplicativos low code, sistemas eficientes e
-                    inteligência artificial para chatbots.</p>
-            </div>
-            <div class="ideal">
-                <img src="../images/global/ideial/ideal-roxo02.png" alt="ideal2">
-                <p>  Alunos que desejam desenvolver habilidades de gestão de projetos, demonstrando responsabilidade no
-                    planejamento e execução eficiente de tarefas. </p>
-            </div>
-            <div class="ideal">
-                <img src="../images/global/ideial/ideal-roxo03.png" alt="ideal3">
-                <p> Aqueles que valorizam a inovação e colaboração, buscando oportunidades para trabalhar em equipe na
-                    criação de soluções tecnológicas inovadoras.</p>
-            </div>
+                        <div class="rating">
+                            <div class="rating-square">
+                                <a href="#" class="page-choice">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-thumbs-up-icon lucide-thumbs-up">
+                                        <path d="M7 10v12" />
+                                        <title>Gostar</title>
+                                        <path
+                                            d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="rating-square">
+                                <a href="#" class="page-choice" id="new-date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-star-icon lucide-star">
+                                        <title>Favoritar</title>
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
+                                    </svg> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
 
         </div>
-    </div>
-
-    <div class="titulo-competencias">
-        <h2>Competências desenvolvidas</h2>
-    </div>
-    <div class="container">
-
-        <div class="square">Desenvolver aplicativos</div>
-        <div class="square">Desenhar soluções</div>
-        <div class="square">Implementar sistemas low code</div>
-        <div class="square">Criar programação de IA para chatbot</div>
-
-    </div>
-
+    </main>
 
 
     <footer class="footer">
@@ -301,10 +221,25 @@
         <p>Eniac Academy © todos os direitos reservados</p>
     </footer>
 
-
     <script src="../script/menuShow.js"></script>
+    <script>
 
+        function turnvisiblemsg() {
+            const paragrafos = document.querySelectorAll('.conteudo-oculto');
+            paragrafos.forEach(p => p.classList.toggle('visivel'));
+        }
 
+        function turnvisibletxt() {
+            var titulo = document.getElementById('btn-ver-mais');
+
+            // Alterando o texto do título
+            if (titulo.innerHTML === 'Mostrar mais...') {
+                titulo.innerHTML = 'Mostrar menos';
+            } else {
+                titulo.innerHTML = 'Mostrar mais...';
+            }
+        }
+    </script>
 </body>
 
 </html>

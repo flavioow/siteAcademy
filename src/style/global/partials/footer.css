@@ -6,6 +6,10 @@
     padding: 2.625rem 10.25rem;
 }
 
+.footer p {
+    text-align: right;
+}
+
 @media (prefers-color-scheme: light) {
     .footer {
         background-color: var(--color-gray-200);
