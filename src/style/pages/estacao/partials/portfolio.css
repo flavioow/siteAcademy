@@ -17,7 +17,7 @@
     text-decoration: none;
 }
 
-@media (prefers-color-scheme: lihgt) {
+@media (prefers-color-scheme: light) {
     .projeto {
         border-color: var(--color-gray-200);
     }
