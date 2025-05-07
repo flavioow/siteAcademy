@@ -1,0 +1,31 @@
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.habilidades-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.habilidade {
+    font-size: 1.15rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+@media (prefers-color-scheme: light) {
+    .habilidade {
+        background-color: var(--color-gray-200);
+        color: var(--color-gray-700);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .habilidade {
+        background-color: var(--color-gray-800);
+        color: var(--color-gray-300);
+    }
+}

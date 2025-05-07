@@ -17,6 +17,16 @@
     --color-error: #ff4949;
     --color-error--rgb: 255, 73, 73;
 
+    /* Cores de Estações */
+    --color-tech: #33476F;
+    --color-tech--rgb: 51, 71, 111;
+    --color-gestao: #3C6F33;
+    --color-gestao--rgb: 60, 111, 51;
+    --color-comunicacao: #FFBB1D;
+    --color-comunicacao--rgb: 255, 187, 29;
+    --color-academica: #706C70;
+    --color-academica--rgb: 112, 108, 112;
+
     /* Escala de Cinza */
     --color-gray-100: #f3f4f6;
     --color-gray-100--rgb: 244, 244, 245;
@@ -103,23 +113,4 @@
     /* Laptop = 1024px */
     /* Desktop = 1280px */
     /* TV = 1536px */
-}
-
-
-:root {
-    color-scheme: light dark;
-
-    /* Cores Principais */
-    --color-primary: #5b54de;
-    --color-primary--rgb: 91, 84, 222;
-    --color-secondary: #cfccff;
-    --color-secondary--rgb: 207, 204, 255;
-    --color-accent: #eab948;
-    --color-accent--rgb: 234, 185, 72;
-
-    /* Cores de Feedback */
-    --color-success: #13ce66;
-    --color-success--rgb: 19, 206, 102;
-    --color-error: #ff4949;
-    --color-error--rgb: 255, 73, 73;
 }

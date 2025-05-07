@@ -1,0 +1,34 @@
+.profissionais {
+    row-gap: 2rem;
+}
+
+.profissionais-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--space-72), 1fr));
+    gap: 2rem;
+}
+
+.profissional {
+    display: flex;
+    gap: 1rem;
+}
+
+.profissional img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    user-select: none;
+    pointer-events: none;
+}
+
+.profissional-dados {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.profissional-dados h5 {
+    margin: 0 !important;
+}

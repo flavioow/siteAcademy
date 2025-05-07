@@ -1,0 +1,66 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--space-72), 1fr));
+    gap: 2rem;
+}
+
+.projeto {
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid;
+    text-decoration: none;
+}
+
+@media (prefers-color-scheme: lihgt) {
+    .projeto {
+        border-color: var(--color-gray-200);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .projeto {
+        border-color: var(--color-gray-800);
+    }
+}
+
+.projeto img {
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;
+    object-position: center;
+    user-select: none;
+    pointer-events: none;
+}
+
+.descricao-projeto {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem;
+}
+
+.descricao-projeto h5 {
+    margin: 0 !important;
+}
+
+@media (prefers-color-scheme: light) {
+
+    .descricao-projeto h5,
+    .descricao-projeto p {
+        color: var(--color-gray-600);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    .descricao-projeto h5,
+    .descricao-projeto p {
+        color: var(--color-gray-400);
+    }
+}
