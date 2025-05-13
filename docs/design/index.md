@@ -8,7 +8,7 @@ Este guia apresenta a proposta visual e os princípios estéticos adotados no si
 
 - [Objetivo do Design](#objetivo-do-design)
 - [Estrutura do Design System](#estrutura-do-design-system)
-- [Por que usar um Design System?](#por-que-usar-um-design-system?)
+- [Por que usar um Design System?](#por-que-usar-um-design-system)
 
 ## Objetivo do Design
 
