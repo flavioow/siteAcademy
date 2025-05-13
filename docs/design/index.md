@@ -1,3 +1,5 @@
+<p><button onclick="history.back()">⬅️ Voltar</button></p>
+
 # Referência de Estilos e Design
 
 Este guia apresenta a proposta visual e os princípios estéticos adotados no sistema da Eniac Academy. Acreditamos que um design bem pensado é essencial para garantir uma experiência agradável, acessível e coerente para todos os usuários — estudantes, professores e gestores.
