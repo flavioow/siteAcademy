@@ -5,8 +5,8 @@ Este repositório contém o projeto do sistema educacional do estágio do Colég
 ## 📌 Índice
 
 - [Sobre o Projeto](#sobre-o-projeto)
-- [Pontos de Melhoria da Versão Anterior](#️pontos-de-melhoria-da-versão-anterior)
-- [Soluções Propostas](#soluções-propostas)
+    - [Pontos de Melhoria da Versão Anterior](#️pontos-de-melhoria-da-versão-anterior)
+    - [Soluções Propostas](#soluções-propostas)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Documentações Relacionadas](#documentações-relacionadas)
 

@@ -1,4 +1,4 @@
-<p><button onclick="history.back()">⬅️ Voltar</button></p>
+🏠 [Página inicial](../index.md) | <a href="javascript:history.back()">Voltar</a>
 
 # Referência de Estilos e Design
 
@@ -10,6 +10,8 @@ Este guia apresenta a proposta visual e os princípios estéticos adotados no si
 
 - [Objetivo do Design](#objetivo-do-design)
 - [Estrutura do Design System](#estrutura-do-design-system)
+    - [Referência Técnica de Estilos (CSS)](#1.-referência-técnica-de-estilos-(css))
+    - [Referência Visual e Componentes (Figma)](#2.-referência-visual-e-componentes-(figma))
 - [Por que usar um Design System?](#por-que-usar-um-design-system)
 
 ## Objetivo do Design
