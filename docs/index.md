@@ -16,7 +16,7 @@ Este repositório contém o projeto do sistema educacional do estágio do Colég
 
 O projeto consiste em um sistema que contempla todos os recursos necessários para os estudantes, professores e gestores gerenciarem seus projetos e atividades no estágio. Ele foi pensado para melhorar a experiência do usuário e facilitar futuras manutenções e expansões do sistema.
 
-## Pontos de Melhoria da Versão Anterior
+### Pontos de Melhoria da Versão Anterior
 
 Identificamos diversos pontos que comprometiam a usabilidade e a escalabilidade do projeto original:
 
@@ -26,7 +26,7 @@ Identificamos diversos pontos que comprometiam a usabilidade e a escalabilidade 
 - Códigos desorganizados, dificultando a escalabilidade;
 - Ausência de padronização visual e estrutural.
 
-## Soluções Propostas
+### Soluções Propostas
 
 Para resolver esses problemas, tomamos as seguintes medidas:
 
