@@ -14,7 +14,7 @@
 
 Este documento descreve as variáveis CSS utilizadas no projeto, organizadas por categoria.
 Elas garantem consistência visual, flexibilidade na personalização e facilitam a manutenção do tema.
-Essa seção serve como **introdução geral** à padronização de estilos, e não como um guia exaustivo — os detalhes visuais e exemplos práticos estarão documentados separadamente com auxílio de ilustrações do Figma.
+Essa seção serve como **introdução geral** à padronização de estilos, e não como um guia exaustivo; os detalhes visuais e exemplos práticos estarão documentados separadamente com auxílio de ilustrações do Figma.
 
 ## Paleta de Cores
 
@@ -28,7 +28,7 @@ Cada cor possui um significado importante para o projeto, elas são utilizadas e
 | `--color-secondary` | Backgrounds secundários, botões secundários |
 | `--color-accent`    | Cor predominante (modo claro)               |
 
-> **Nota:** Todas as variáveis possuem uma versão RBG, onde o sufixo `--rgb` é adicionado. Sua utilização é útil quando precisa-se de cores com transparência. Nesse cenário, utilize um comando similar a `rgba(var(--color-accent--rgb), 0.5)`.
+> **Nota:** Todas as variáveis possuem uma versão RBG, onde o sufixo `--rgb` é adicionado. Sua utilização é recomendada quando precisa-se de cores com transparência. Nesse cenário, utilize um comando similar a `rgba(var(--color-accent--rgb), 0.5)`.
 
 ### Cores de Feedback
 
@@ -58,7 +58,7 @@ Cada cor possui um significado importante para o projeto, elas são utilizadas e
 
 ## Tipografia
 
-Bem como a paleta de cor, a tipografia faz parte fundamental da identidade visual do projeto. Não altere-as em nenhum local.
+Bem como a paleta de cor, a tipografia tem papel fundamental da identidade visual do projeto. Não altere-as em nenhum local.
 
 | Variável        | Uso                           |
 |-----------------|-------------------------------|
