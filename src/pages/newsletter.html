@@ -62,17 +62,16 @@
     </header>
 
     <main class="content-grid">
-        <section class=" content-breakout">
+        <section class="">
             <div class="title-text">
                 <h2 class="title">Newsletter</h2>
             </div>
         </section>
 
-        <div class="everything content-breakout">
+        <div class="everything">
             <div class="left-side">
-                <div class="spreadsheet">
-                    <embed src="http://example.com/the.pdf" width="100%" height="1000px" style="border-radius: 10px;"
-                        type="application/pdf">
+                <div class="pdf-container">
+                    <iframe src="http://example.com/the.pdf" frameborder="0"></iframe>
                 </div>
             </div>
 
@@ -93,13 +92,11 @@
                     <div class="box-group">
                         <div class="box-visible">
                             <h3>Resumo mensal</h3>
-                            <p class="conteudo-oculto">Apelidados de “faz tudo”, descubra agora o trabalho de quem faz
-                                Front End no Eniac Academy.</p>
-                            <p class="conteudo-oculto">Por Cauã Rodrigues, 12 de Março de 2025</p>
-                            <p class="conteudo-oculto">#figma #visualstudiocode #frontend</p>
-                            <a href="#" onclick="turnvisibletxt()">
-                                <h5 id="btn-ver-mais" onclick="turnvisiblemsg()">Mostrar mais...</h5>
-                            </a>
+                            <p>Descubra hoje a incrível história de alguns estudantes que se
+                                sujeitam a criar todo um sistema em pouquíssimo tempo. Também chamados de "faz tudo", os
+                                estagiários de hard-code debatem sobre sua carga superior de trabalho.</p>
+                            <p>Por Cauã Rodrigues, 12 de Março de 2025</p>
+                            <p class="box-tags">#estagiarios #hardcode #querem #salario</p>
                         </div>
 
                         <div class="rating">
@@ -144,24 +141,6 @@
     </footer>
 
     <script src="../script/menuShow.js"></script>
-    <script>
-
-        function turnvisiblemsg() {
-            const paragrafos = document.querySelectorAll('.conteudo-oculto');
-            paragrafos.forEach(p => p.classList.toggle('visivel'));
-        }
-
-        function turnvisibletxt() {
-            var titulo = document.getElementById('btn-ver-mais');
-
-            // Alterando o texto do título
-            if (titulo.innerHTML === 'Mostrar mais...') {
-                titulo.innerHTML = 'Mostrar menos';
-            } else {
-                titulo.innerHTML = 'Mostrar mais...';
-            }
-        }
-    </script>
 </body>
 
 </html>
