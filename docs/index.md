@@ -2,7 +2,6 @@
 
 Este repositório contém o projeto do sistema educacional do estágio do Colégio Eniac. Nossa equipe trabalhou para resolver diversos problemas da versão anterior, aplicando boas práticas de design, responsividade e padronização de código.
 
-
 ## 📌 Índice
 
 - [Sobre o Projeto](#-sobre-o-projeto)
@@ -10,7 +9,6 @@ Este repositório contém o projeto do sistema educacional do estágio do Colég
 - [Soluções Propostas](#-soluções-propostas)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [Documentações Relacionadas](#-documentações-relacionadas)
-
 
 ## Sobre o Projeto
 
@@ -38,11 +36,11 @@ Para resolver esses problemas, tomamos as seguintes medidas:
 
 ## Tecnologias Utilizadas
 
-- Django
-- HTML5
-- CSS3
-- JavaScript
-- Figma (para prototipagem e design)
+- Django;
+- HTML5;
+- CSS3;
+- JavaScript;
+- Figma (para prototipagem e design).
 
 ## Documentações Relacionadas
 
@@ -50,4 +48,4 @@ Para detalhes mais específicos, acesse os demais documentos do projeto:
 
 - [Guia de Padronização de Código](./padronizacao.md)
 - [Estrutura de Pastas](./estrutura.md)
-- [Referência de Estilos e Design](./ref-design.md)
+- [Referência de Estilos e Design](./design/index.md)
