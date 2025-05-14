@@ -1,0 +1,71 @@
+# Componentes: Cards das Estações
+
+Os cards possuem definições que variam de acordo com as estações que representam
+
+### Código base
+
+```css
+.station-card,
+.station-card * {
+    text-decoration: none;
+}
+
+.station-card {
+    display: grid;
+    gap: 1rem;
+    height: fit-content;
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    min-width: var(--space-80);
+}
+
+.station-card:hover {
+    transform: scale(1.05);
+}
+
+.station-card div {
+    display: flex;
+    gap: 0.375rem;
+}
+
+.station-card h5,
+.station-card svg,
+.station-card path,
+.station-card g {
+    color: var(--color-gray-100);
+    stroke: var(--color-gray-100);
+}
+
+.station-card p {
+    color: var(--color-gray-300);
+}
+```
+### Mudanças de acordo com sua estação
+
+```css
+.station-card.card-ti {
+    background-image: radial-gradient(farthest-corner at 159px 84px,
+            #33476f 0%,
+            #0b1a39 100%);
+}
+
+.station-card.card-gestao {
+    background-image: radial-gradient(farthest-corner at 52px 22px,
+            #3c6f33 0%,
+            #233220 100%);
+}
+
+.station-card.card-marketing {
+    background-image: radial-gradient(farthest-corner at 114px 92px,
+            #ffbb1d 0%,
+            #533721 100%);
+}
+
+.station-card.card-academico {
+    background-image: radial-gradient(farthest-corner at 300px 92px,
+            #706c70 0%,
+            #272427 100%);
+}
+```

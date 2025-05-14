@@ -64,3 +64,15 @@
 .content-grid>section:not(.main-background) {
     padding-block: 2.625rem;
 }
+
+@media (prefers-color-scheme: light) {
+    .content-grid>section.primary {
+        background-color: var(--color-accent);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .content-grid>section.primary {
+        background-color: var(--color-primary);
+    }
+}
