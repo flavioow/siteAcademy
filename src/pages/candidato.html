@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/pages/sobre/sobre.css">
     <script src="../../../script/global/navToggle.js" defer></script>
-    <link rel="stylesheet" href="../style/pages/dashboard/dashboard.css">
 
-    <title>Academy One - Dashboard</title>
+    <title>Tabela</title>
 </head>
 
 <body>
@@ -65,13 +64,11 @@
 
     <main class="content-grid">
         <section>
-            <h2>Controle de Projeto</h2>
-            <h4>Hard Code</h4>
+            <h2>Candidato</h2>
         </section>
 
-        <section class="everything">
+        <section>
             <div class="table-container">
-
                 <div class="table-header">
                     <form action="" method="get" name="search-form">
                         <div class="input">
@@ -87,13 +84,11 @@
                                 placeholder="Pesquisar">
                         </div>
                     </form>
-
                     <div class="table-dropdown">
                         <button class="dropdown-button">
                             <p>Filtro</p>
                             <p>v</p>
                         </button>
-
                         <div class="dropdown-content">
                             <button class="dropdown-options">Concluídos</button>
                             <button class="dropdown-options">Em andamento</button>
@@ -101,27 +96,26 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="table-body">
                     <div class="table-wrapper">
                         <table>
                             <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Projeto</th>
-                                    <th>Início</th>
-                                    <th>Término</th>
-                                    <th>Status</th>
+                                    <th>Nome</th>
+                                    <th>Telefone</th>
+                                    <th>Email</th>
+                                    <th>Estação</th>
                                     <th>Ações</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Frontend Academy</td>
-                                    <td>18/02/2025</td>
-                                    <td>24/06/2025</td>
-                                    <td>Concluído</td>
+                                    <td>Mateus Teixeira de Oliveira</td>
+                                    <td>(11) 99999-9999</td>
+                                    <td>mateus.teixeira.eu@gmail.com</td>
+                                    <td>Back (de fumar)</td>
                                     <td>
                                         <div class="table-dropdown">
                                             <button class="dropdown-button">
@@ -136,10 +130,10 @@
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Backend Academy</td>
-                                    <td>18/02/2025</td>
-                                    <td>24/06/2025</td>
-                                    <td>Em andamento</td>
+                                    <td>Kayky Alves Rúbio</td>
+                                    <td>(17) 99999-9999</td>
+                                    <td>loremipsum@gmail.com</td>
+                                    <td>Back-End</td>
                                     <td>
                                         <div class="table-dropdown">
                                             <button class="dropdown-button">
@@ -154,10 +148,10 @@
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Outros Academy</td>
-                                    <td>01/01/2025</td>
-                                    <td>24/06/2025</td>
-                                    <td>Não iniciado</td>
+                                    <td>Pedro Portella de Freitas</td>
+                                    <td>0800-201807</td>
+                                    <td>portella@hotmail.com.br</td>
+                                    <td>Inverno</td>
                                     <td>
                                         <div class="table-dropdown">
                                             <button class="dropdown-button">
@@ -174,52 +168,14 @@
                         </table>
                     </div>
                 </div>
-
                 <div class="table-footer">
                     <button type="button" class="btn primary">Anterior</button>
                     <button type="button" class="btn primary">Próximo</button>
                 </div>
             </div>
-
-            <aside>
-                <div class="boxes">
-                    <div class="box">
-                        <p class="number">0</p>
-                        <p>Concluídos</p>
-                    </div>
-                    <div class="box">
-                        <p class="number">0</p>
-                        <p>Em andamento</p>
-                    </div>
-                    <div class="box">
-                        <p class="number">0</p>
-                        <p>Atrasados</p>
-                    </div>
-                    <div class="box">
-                        <p class="number">0</p>
-                        <p>Não iniciado</p>
-                    </div>
-                    <div class="box">
-                        <p class="number">0</p>
-                        <p>Paralizado</p>
-                    </div>
-                </div>
-            </aside>
-
         </section>
     </main>
 
-    <footer class="footer">
-        <picture>
-            <source srcset="../images/global/icones/escuro/logo-footer.svg" media="(prefers-color-scheme: dark)">
-            <img src="../images/global/icones/claro/logo-footer.svg" alt="logo" title="logo" decoding="async"
-                fetchpriority="high">
-        </picture>
-
-        <p>Eniac Academy © todos os direitos reservados</p>
-    </footer>
-
-    <script src="../script/menuShow.js"></script>
 </body>
 
 </html>

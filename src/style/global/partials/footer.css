@@ -4,6 +4,8 @@
     justify-content: space-between;
     align-items: end;
     padding: 2.625rem 10.25rem;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer p {

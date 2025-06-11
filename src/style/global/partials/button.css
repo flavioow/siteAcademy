@@ -4,6 +4,13 @@
     border-radius: 0.625rem;
     transition: all .3s ease-in-out;
     cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: initial;
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    gap: 1rem;
 }
 
 @media (prefers-color-scheme: light) {

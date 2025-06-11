@@ -4,6 +4,7 @@
     padding: .625rem;
     border-radius: 10px;
     transition: all .2s ease-in-out;
+    align-items: center;
 }
 
 .input label {

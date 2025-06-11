@@ -12,6 +12,17 @@
 body {
     width: 100%;
     min-height: 100dvh;
+    position: relative;
+}
+
+*+footer {
+    margin-bottom: -10rem;
+}
+
+@media screen and (max-width: 780px) {
+    *+footer {
+        margin-bottom: -12rem;
+    }
 }
 
 @media (prefers-color-scheme: light) {
@@ -72,6 +83,14 @@ h4 {
 h5 {
     font-size: 1.250rem;
     /* 20px */
+}
+
+input,
+button {
+    font-size: 1.000rem;
+    background-color: initial;
+    border: none;
+    outline: none;
 }
 
 small {
