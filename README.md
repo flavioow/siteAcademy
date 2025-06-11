@@ -1,8 +1,18 @@
-# Eniac Academy – Sistema Institucional do Estágio
+<div align="center">
+    <h1>
+        <picture>
+            <source media="(prefers-color-scheme: dark)" src="https://raw.githubusercontent.com/flavioow/siteAcademy/b125b72c208310e604068cb08ec7cc984f4dd9c5/src/images/global/icones/escuro/logo-academy.svg">
+            <img scr="https://raw.githubusercontent.com/flavioow/siteAcademy/b125b72c208310e604068cb08ec7cc984f4dd9c5/src/images/global/icones/claro/logo-academy.svg">
+        </picture>
+        Eniac Academy – Sistema Institucional do Estágio
+    </h1>
+
 
 ![status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 ![tech](https://img.shields.io/badge/front--end-HTML%20%7C%20CSS%20%7C%20JS-blue)
 ![back](https://img.shields.io/badge/back--end-Django-lightgrey)
+
+</div>
 
 ---
 
