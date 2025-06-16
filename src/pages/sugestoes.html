@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/pages/sugestoes/sugestoes.css">
+    <link rel="stylesheet" href="../../../style/global/global.css">
+    <script src="../../../script/global/navToggle.js" defer></script>
+
+    <title>Sugestões - ADM</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <section class="header-buttons">
+            <svg id="menu" class="header-icon" width="18" height="14" viewBox="0 0 18 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 7H17M1 1H17M1 13H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+
+            <svg id="close-menu" class="header-icon" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L1 11M1 1L11 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+
+            <div class="mobile">
+                <h3>Desconectado</h3>
+                <a href="#">Entre para acessar o perfil</a>
+            </div>
+        </section>
+
+        <div class="divider">
+            <p>Menu</p>
+            <div class="line"></div>
+        </div>
+
+        <section class="logo">
+            <a href="../../index.html">
+                <picture>
+                    <source srcset="../images/global/icones/escuro/logo-academy.svg"
+                        media="(prefers-color-scheme: dark)">
+                    <img src="../images/global/icones/claro/logo-academy.svg" alt="logo" title="logo" decoding="async"
+                        fetchpriority="high">
+                </picture>
+            </a>
+        </section>
+
+        <section class="menu">
+            <nav class="menu-item">
+                <a href="./sobre.html" class="btn">Sobre</a>
+                <a href="./estacoes.html" class="btn">Estações</a>
+                <a href="./desenvolvedores.html" class="btn">Devs</a>
+                <a href="./contato.html" class="btn">Contato</a>
+                <a href="./newsletter.html" class="btn">Newsletter</a>
+                <a href="./dashboard.html" class="btn ativo">Dashboard</a>
+            </nav>
+
+            <a href="#" class="btn primary">Entrar</a>
+        </section>
+    </header>
+
+    <main class="content-grid">
+        <section>
+            <h2>Sugestão</h2>
+        </section>
+
+        <section>
+            <form action="" method="get" class="campos-container">
+                <div class="campos">
+                    <label for="titulo" class="label-container">
+                        Título
+                        <div class="input">
+                            <input type="text" name="titulo" id="titulo" placeholder="Sugestão de melhoria..." required>
+                        </div>
+                    </label>
+                </div>
+                <div class="descricao">
+                    <label for="descricao" class="label-container">
+                        Descrição
+                        <textarea id="descricao" name="descricao" placeholder="Eu gostaria de sugerir que..." rows="10"
+                            cols="50"></textarea>
+                    </label>
+                </div>
+                <button type="button" class="btn primary" style="width: fit-content;">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

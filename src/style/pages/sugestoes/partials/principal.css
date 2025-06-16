@@ -1,0 +1,43 @@
+.titulo>* {
+    margin: 0 !important;
+}
+
+@media (prefers-color-scheme: light) {
+    h3 {
+        color: var(--color-gray-800) !important;
+    }
+
+    h4 {
+        color: var(--color-gray-600) !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    h3 {
+        color: var(--color-gray-200) !important;
+    }
+
+    h4 {
+        color: var(--color-gray-400) !important;
+    }
+}
+
+.btn-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.entregaveis {
+    content: grid;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section label {
+    font-weight: bold;
+    color: var(--color-gray-500);
+}

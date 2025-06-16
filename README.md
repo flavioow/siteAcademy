@@ -47,7 +47,7 @@ Este repositório contém apenas o **código Front-End** do site institucional. 
 
 - **Front-End:**
     - HTML5
-    -CSS3 (com foco em responsividade)
+    - CSS3 (com foco em responsividade)
     - Javascript
 
 - **Ferramentas:**
@@ -90,12 +90,13 @@ Agradecemos a todos os colegas envolvidos, professores e coordenadores que nos o
     - Felipe Rodrigues Martins
     - Flávio Henrique Perusin de Souza
     - Kevin Simões de Souza Lima
+    - Thiago Rodrigues Martins
 
 - **Back-End:**
     - **Giovani Dantas Braconi (líder da estação)**
     - Alexandre Raposo
     - Augusto Moraes
-    - Enzo Espada Ramalho
+    - Enzo Spada Ramalho
     - Mateus Teixeira de Oliveira
     - Gabriella Seregati Ribeiro
     - Kayky Alves Rúbio
