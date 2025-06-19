@@ -14,10 +14,6 @@
     min-width: var(--space-80);
 }
 
-.station-card:hover {
-    transform: scale(1.05);
-}
-
 .station-card div {
     display: flex;
     gap: 0.375rem;

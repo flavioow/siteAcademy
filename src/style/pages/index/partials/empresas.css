@@ -26,7 +26,7 @@
 }
 
 
-.empresas .linha .esquerda{
+.empresas .linha .esquerda {
     background-color: var(--azul-claro);
     width: 60%;
     height: 2px;
@@ -36,7 +36,7 @@
 }
 
 
-.empresas .linha .direita{
+.empresas .linha .direita {
     background-color: var(--azul-escuro);
     width: 60%;
     height: 2px;
@@ -93,21 +93,21 @@
     display: none;
 }
 
-.empresas .card-botao .botao-card{
+.empresas .card-botao .botao-card {
     cursor: pointer;
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    border: none;   
-    background-color: #ccc;    
+    border: none;
+    background-color: #ccc;
 }
 
-.empresas .card-botao .botao-card.ativo{ 
-    background-color: var(--azul-escuro);    
+.empresas .card-botao .botao-card.ativo {
+    background-color: var(--azul-escuro);
 }
 
 @media(max-width: 628px) {
-    .empresas .empresas-cards{
+    .empresas .empresas-cards {
         height: 200px;
         position: relative;
     }
@@ -147,9 +147,8 @@
         height: 110px;
         width: 110px;
     }
-    
+
     .empresas .empresas-cards .card-item .imagem-card.rb {
         max-width: 120px;
     }
 }
-

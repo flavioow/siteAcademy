@@ -7,8 +7,8 @@
 .carousel-container .next-button {
     display: none;
     position: absolute;
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     top: 50%;
     cursor: pointer;
@@ -62,7 +62,7 @@
 
 .carousel .carousel-items {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     position: relative;
 }
 
@@ -71,9 +71,19 @@
 */
 
 @media screen and (max-width: 780px) {
-    .carousel .carousel-items {
+    .carousel:has(.carousel-container.desativado) .carousel-items {
         display: grid;
         grid-auto-flow: column;
-        grid-auto-columns: calc(100vw - (2 * 2rem));
+        grid-auto-columns: calc(100vw - (2 * var(--padding-inline)) - 1.1rem);
+    }
+
+    .carousel-container.desativado .prev-button {
+        left: 0;
+        transform: translate(0%, -50%);
+    }
+
+    .carousel-container.desativado .next-button {
+        right: 0;
+        transform: translate(0%, -50%);
     }
 }

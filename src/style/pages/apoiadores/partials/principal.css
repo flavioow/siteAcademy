@@ -1,0 +1,9 @@
+.foto {
+    height: 100px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+article>*:not(:last-child) {
+    margin-bottom: 1rem;
+}
